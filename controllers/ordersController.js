@@ -112,8 +112,8 @@ export const openStripeCheckoutPage = async (req, res) => {
         // here we are creating a session on the stripe server and then we are sending the session url to the frontend and then we are displaying the session url to the user and then the user will be able to pay for the order
           line_items,
           mode: "payment",
-          success_url: `http://localhost:5173/cart?success=true`,
-          cancel_url: `http://localhost:5173/cart?success=false`,
+          success_url: `https://e-commerce-fullstak.onrender.com/#/cart?success=true`,
+          cancel_url: `https://e-commerce-fullstak.onrender.com/#/cart?success=false`,
         });
         
         // here we are sending a response to the frontend and on the frontend we are going to display the session.url page to the user
